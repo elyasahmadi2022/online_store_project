@@ -1,0 +1,126 @@
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.closeIcon {
+    cursor: pointer;
+    color: #666;
+    position: absolute;
+    left: 0;
+}
+
+.sperator {
+    width: 90%;
+    height: 4px;
+    background-color: f0f0f1;
+    margin-inline: auto;
+}
+
+.closeIcon:hover {
+    color: #000;
+}
+
+.message {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.searchWrapper {
+    margin-bottom: 30px;
+}
+
+.frequentCities h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.cityItem {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.cityItem:hover {
+    background-color: #e0e0e0;
+}
+
+.searchResults {
+    margin-bottom: 30px;
+}
+
+.searchResults h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.resultsList {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.resultItem {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.resultItem:hover {
+    background-color: #f5f5f5;
+}
+
+.noResults {
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}

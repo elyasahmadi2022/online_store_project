@@ -1,0 +1,517 @@
+.layout {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a.active {
+    background-color: #ff2d55;
+    color: white;
+    border: transparent;
+}
+
+.first_part {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+}
+
+.first_part {
+    padding: 10px 20px;
+}
+
+.second_part {
+    padding: 8px 20px;
+}
+
+
+
+.second_part {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 0 15px;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+
+
+.header_left {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.header_center {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header_center div {
+    width: 80%;
+}
+
+.header_right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.links:hover {
+    color: #f88f01;
+}
+
+.access_bars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0 15px;
+}
+
+.access_bars_first_element {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.access_bars_bell_marks {
+    position: absolute;
+    bottom: 5px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(247, 64, 64);
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.access_bars_first_element svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.access_bars_second_element {
+    position: relative;
+
+}
+
+.access_bars_third_element svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.button {
+    font-family: "IranYekanXFaNum";
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    gap: 0 4px;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+.tabs {
+    position: relative;
+    width: auto;
+    display: flex;
+    gap: 0 10px;
+    padding: 0 5px;
+}
+
+.tabs_item {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: all 0.2s ease;
+}
+
+.tabs_item:hover {
+    border-bottom: 2px solid #ff2d55;
+}
+
+.tabs_item span {
+    font-size: 12px;
+}
+
+.nav_menu {
+    width: max-content;
+}
+
+.nav__menu {
+    font-weight: 300;
+    color: #999;
+}
+
+.sperator_wrapper {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.sperator {
+    width: 2px;
+    height: 15px;
+    background-color: #999;
+    border-radius: 20px;
+}
+
+.tabs_item svg {
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease;
+    stroke-width: 2px;
+}
+
+.location__tracking {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.location__tracking span {
+    font-size: 14px;
+}
+
+.location__tracking svg {
+    width: 18px;
+}
+
+.search_container {
+    width: 550px;
+    height: 500px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.cards {
+    display: none;
+
+}
+
+.card_item {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #999;
+    width: 23%;
+    border-radius: 8px;
+}
+
+.card_item_svg_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_item .card_item_svg_container svg {
+    width: 30px;
+}
+
+
+.second__search_bar {
+    width: 100%;
+    display: none;
+}
+
+
+
+.search__bar_icon_camera {
+    width: 34px;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search__bar_icon svg {
+    width: 34px;
+}
+
+
+.search__bar_icon {
+    width: 40px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-inline: 8px;
+    margin-inline: 8px;
+    background-color: #f0f0f1;
+
+}
+
+.search_text_color {
+    color: #999;
+    cursor: pointer;
+}
+
+/* Standardize SVG/icon sizes so inline attributes don't overflow */
+.access_bars svg,
+.button svg,
+.search_bar_icon,
+.search__bar_icon svg,
+.search__bar_icon_camera svg,
+.card_item .card_item_svg_container svg {
+    width: 24px;
+    max-width: 24px;
+    height: 24px;
+}
+
+/* Helper for JS-driven hide */
+.hidden {
+    display: none !important;
+}
+
+.search__bar_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        height: 180px;
+        justify-content: center;
+        /* allow it to shrink dynamically */
+    }
+
+    .layout.scrolled {
+        height: 120px;
+        padding-bottom: 12px;
+    }
+
+    .tabs_item span {
+        font-size: 10px;
+    }
+
+    .tabs_item svg {
+        width: 20px;
+    }
+
+    .second__search_bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+
+    .second_part {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .layout.scrolled .first_part {
+        opacity: 0.95;
+        padding: 4px 20px;
+    }
+
+    .layout.scrolled .card_item_svg_container {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+    }
+
+    .layout.scrolled .second_part {
+        opacity: 0.95;
+    }
+
+
+    .header_center {
+        display: none;
+    }
+
+    .header_left {
+        display: none;
+    }
+
+    .header_right {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .first_part {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav_menu,
+    .sperator_wrapper,
+    .tabs_item,
+    .dropdown_container,
+    .location__tracking {
+        display: none;
+    }
+
+
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .card_item span {
+        font-size: 8px;
+    }
+
+    .card_item .card_item_svg_container svg {
+        width: 20px;
+    }
+}
+
+.search_wrappers {
+    position: relative;
+    width: 100%;
+}
+
+.search_input_field {
+    width: 100%;
+    padding-block: 15px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f0f0f1;
+    font-family: "IranYekanXFaNum";
+}
+
+.search_bar_icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    color: #999;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "IranYekanX";
+    font-weight: 600;
+    color: #ff2d55;
+    margin-inline: 20px;
+}
+
+.search_bar_container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.search_bar_container_flex {
+    display: flex;
+    align-items: center;
+    gap: 5px 5px;
+    padding: 5px 10px;
+}
+
+.go_back_icon {
+    width: 40px;
+    background-color: #f0f0f1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bell_icon_name {
+    width: 43px;
+    height: 100%;
+    background-color: #f0f0f1;
+    color: #333;
+    margin-inline: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}

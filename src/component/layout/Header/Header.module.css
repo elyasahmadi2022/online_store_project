@@ -457,7 +457,7 @@ a.active {
 
 .search_input_field {
     width: 100%;
-    padding-block: 15px;
+    padding-block: 10px;
     padding-right: 30px;
     border: none;
     outline: none;
@@ -468,8 +468,8 @@ a.active {
 
 .search_bar_icon {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     top: 50%;
     color: #999;
     right: 5px;
@@ -500,18 +500,27 @@ a.active {
 }
 
 .go_back_icon {
-    width: 40px;
+    width: 30px;
+    padding-block: 4px;
     background-color: #f0f0f1;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .bell_icon_name {
-    width: 43px;
-    height: 100%;
+    width: 40px;
+    padding-block: 6px;
     background-color: #f0f0f1;
     color: #333;
     margin-inline: 5px;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell_icon_name svg {
+    width: 30px;
+    color: #5856d6;
 }

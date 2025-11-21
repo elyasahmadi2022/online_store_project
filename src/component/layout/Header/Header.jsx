@@ -340,7 +340,7 @@ function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#5856d6"
-              strokeWidth="1.3"
+              strokeWidth="1.2"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
@@ -351,11 +351,9 @@ function Header() {
           <div className={styles.bell_icon_name}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="44"
-              height="44"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#004"
+              stroke="currentColor"
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -365,8 +363,6 @@ function Header() {
             </svg>
           </div>
         </div>
-
-        <div className={styles.search__bar}></div>
 
         <div
           className={styles.dropdown_container}
@@ -445,8 +441,6 @@ function Header() {
               onClick={() => setSearchBox(false)}
               className={styles.go_back_icon}
               xmlns="http://www.w3.org/2000/svg"
-              width="44"
-              height="44"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#5856d6"

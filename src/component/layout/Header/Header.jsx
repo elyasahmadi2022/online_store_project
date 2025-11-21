@@ -5,6 +5,151 @@ import LocationSelector from "../../LocationSelector/LocationSelector";
 import Modal from "../../modal/Modal";
 import styles from "./Header.module.css";
 import SearchBar from "../../ui/SearchBar/SearchBar";
+import NavItemLarge from "../NavigationComponent/NavItemLarge";
+import NavItemSmaller from "../NavigationComponent/NavItemSmaller";
+const navItemsSmaller = [
+  {
+    path: "/",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 15l6 -6" />
+        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
+        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      </svg>
+    ),
+    name: "شگفت انگیز ها",
+  },
+  {
+    path: "/home",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 15l6 -6" />
+        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
+        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      </svg>
+    ),
+    name: "شگفت انگیز ها",
+  },
+  {
+    path: "/new",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 15l6 -6" />
+        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
+        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      </svg>
+    ),
+    name: "شگفت انگیز ها",
+  },
+  {
+    path: "/old",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 15l6 -6" />
+        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
+        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      </svg>
+    ),
+    name: "شگفت انگیز ها",
+  },
+];
+
+const navItemsLarge = [
+  {
+    tabName: "سوپر مارکت",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+        <path d="M17 17h-11v-14h-2" />
+        <path d="M6 5l14 1l-1 7h-13" />
+      </svg>
+    ),
+    path: "/supermarket",
+  },
+  {
+    tabName: "طلای دیجتال",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" />
+        <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
+        <path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" />
+        <path d="M3 6v10c0 .888 .772 1.45 2 2" />
+        <path d="M3 11c0 .888 .772 1.45 2 2" />
+      </svg>
+    ),
+    path: "/digitalgold",
+  },
+  {
+    tabName: "پر فروش ترینها",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
+      </svg>
+    ),
+    path: "/bestsellers",
+  },
+];
 
 function Header() {
   const [showLocation, setShowLocation] = useState(false);
@@ -150,122 +295,16 @@ function Header() {
           </div>
         </div>
         <div className={styles.cards}>
-          <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              isActive
-                ? `${styles.card_item} ${styles.active} `
-                : `${styles.card_item}`
-            }
-            style={{
-              padding: isScrolled ? "5px 0" : "",
-            }}
-          >
-            <div className={cardSvgClass(isScrolled)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 15l6 -6" />
-                <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
-                <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              </svg>
-            </div>
-            <span> شگفت انگیز ها </span>
-          </NavLink>
-          <NavLink
-            style={{
-              padding: isScrolled ? "5px 0" : "",
-            }}
-            to={"/home"}
-            className={({ isActive }) =>
-              isActive
-                ? ` ${styles.card_item}  ${styles.active} `
-                : `${styles.card_item}`
-            }
-          >
-            <div className={cardSvgClass(isScrolled)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 15l6 -6" />
-                <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
-                <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              </svg>
-            </div>
-            <span> شگفت انگیز ها </span>
-          </NavLink>
-          <NavLink
-            style={{
-              padding: isScrolled ? "5px 0" : "",
-            }}
-            to={"/new"}
-            className={({ isActive }) =>
-              isActive
-                ? ` ${styles.card_item} ${styles.active} `
-                : `${styles.card_item}`
-            }
-          >
-            <div className={cardSvgClass(isScrolled)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 15l6 -6" />
-                <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
-                <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              </svg>
-            </div>
-            <span> شگفت انگیز ها </span>
-          </NavLink>
-          <NavLink
-            style={{
-              padding: isScrolled ? "5px 0" : "",
-            }}
-            to={"/old"}
-            className={({ isActive }) =>
-              isActive
-                ? `${styles.card_item} ${styles.active} `
-                : `${styles.card_item}`
-            }
-          >
-            <div className={cardSvgClass(isScrolled)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 15l6 -6" />
-                <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
-                <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              </svg>
-            </div>
-            <span> شگفت انگیز ها </span>
-          </NavLink>
+          {navItemsSmaller.map((item) => (
+            <NavItemSmaller
+              key={item.path}
+              isScrolled={isScrolled}
+              cardSvgClass={cardSvgClass}
+              path={item.path}
+              icon={item.icon}
+              name={item.name}
+            />
+          ))}
         </div>
       </div>
       <div className={styles.second_part}>
@@ -354,57 +393,14 @@ function Header() {
           </div>
           <CategoriesDropdown show={showCategories} />
         </div>
-        <div className={`${styles.tabs_item} ${styles.nav__menu}`}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-            <path d="M17 17h-11v-14h-2" />
-            <path d="M6 5l14 1l-1 7h-13" />
-          </svg>
-          <span> سوپر مارکت</span>
-        </div>
-        <div className={`${styles.tabs_item} ${styles.nav__menu}`}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" />
-            <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
-            <path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" />
-            <path d="M3 6v10c0 .888 .772 1.45 2 2" />
-            <path d="M3 11c0 .888 .772 1.45 2 2" />
-          </svg>
-
-          <span>طلای دیجتال</span>
-        </div>
-        <div className={`${styles.tabs_item} ${styles.nav__menu}`}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
-          </svg>
-
-          <span>پر فروش ترینها </span>
-        </div>
+        {navItemsLarge.map((item) => (
+          <NavItemLarge
+            key={item.path}
+            tabName={item.tabName}
+            icon={item.icon}
+            path={item.path}
+          />
+        ))}
         <div className={styles.sperator_wrapper}>
           <span className={styles.sperator}></span>
         </div>

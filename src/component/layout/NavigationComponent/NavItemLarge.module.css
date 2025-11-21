@@ -1,0 +1,25 @@
+.tabs_item {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: all 0.2s ease;
+}
+
+.tabs_item:hover {
+    border-bottom: 2px solid #ff2d55;
+}
+
+.tabs_item span {
+    font-size: 12px;
+}
+
+.nav_menu {
+    width: max-content;
+}
+
+.nav__menu {
+    font-weight: 300;
+    color: #999;
+}

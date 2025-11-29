@@ -1,0 +1,310 @@
+.cartContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "IranYekanXFaNum";
+}
+
+.cartContent {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-family: "IranYekanXFaNum";
+}
+
+.cartItems {
+  flex: 3;
+  min-width: 300px;
+  font-family: "IranYekanXFaNum";
+}
+
+.cartItems h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "IranYekanXFaNum";
+}
+
+.cartSummary {
+  flex: 1;
+  min-width: 300px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  background-color: var(--text-white);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  transition: .3s;
+  font-family: "IranYekanXFaNum";
+}
+
+.cartSummary:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+  transform: translateY(-2px);
+}
+
+.couponSection {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #F4F4F5;
+  font-family: "IranYekanXFaNum";
+}
+
+.couponSection h3 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.couponForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "IranYekanXFaNum";
+}
+
+.couponInput {
+  padding: 12px 15px;
+  border: 1px solid var(--text-light);
+  border-radius: 10px;
+  font-size: 14px;
+  transition: .3s;
+  outline: none;
+  font-family: "IranYekanXFaNum";
+}
+
+.couponInput:focus {
+  border-color: var(--color-dark-1);
+  box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.1);
+}
+
+.applyCouponBtn {
+  padding: 12px 15px;
+  background: var(--gradient-dark);
+  color: var(--text-white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: .3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  font-family: "IranYekanXFaNum";
+}
+
+.applyCouponBtn:hover {
+  background: linear-gradient(45deg, var(--color-dark-2), #3F3F46);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.applyCouponBtn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .1), transparent);
+  transition: .5s;
+}
+
+.applyCouponBtn:hover:before {
+  left: 100%;
+}
+
+.couponMessage {
+  margin-top: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: "IranYekanXFaNum";
+}
+
+.successMessage {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #166534;
+  border: 1px solid #22C55E;
+  border-radius: 10px;
+  font-family: "IranYekanXFaNum";
+}
+
+.errorMessage {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #7F1D1D;
+  border: 1px solid #EF4444;
+  border-radius: 10px;
+  font-family: "IranYekanXFaNum";
+}
+
+.appliedCoupon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(to right, rgba(169, 3, 41, 1) 0%, rgba(196, 72, 72, 1) 44%, rgba(170, 34, 56, 1) 100%);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  font-family: "IranYekanXFaNum";
+}
+
+.removeCouponBtn {
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: .3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+}
+
+.removeCouponBtn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--text-white);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  font-family: "IranYekanXFaNum";
+}
+
+.emptyCartIcon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ff2d55;
+}
+
+.emptyCart h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.emptyCart p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  line-height: 1.5;
+}
+
+.browseButton {
+  padding: 12px 24px;
+  background: var(--gradient-dark);
+  color: var(--text-white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  font-family: "IranYekanXFaNum";
+}
+
+.browseButton:hover {
+  background: linear-gradient(45deg, var(--color-dark-2), #3F3F46);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.browseButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .1), transparent);
+  transition: .5s;
+}
+
+.browseButton:hover:before {
+  left: 100%;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .cartContainer {
+    padding: 15px;
+  }
+
+  .cartContent {
+    gap: 20px;
+  }
+
+  .cartItems {
+    flex: 2;
+  }
+
+  .cartSummary {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .cartItems h1 {
+    font-size: 1.3rem;
+  }
+
+  .couponSection h3 {
+    font-size: 16px;
+  }
+
+  .couponForm {
+    gap: 8px;
+  }
+
+  .couponInput {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .applyCouponBtn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .appliedCoupon {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .removeCouponBtn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartContent {
+    flex-direction: column;
+  }
+
+  .cartSummary {
+    position: static;
+    width: 100%;
+  }
+}

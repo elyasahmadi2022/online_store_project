@@ -4,7 +4,7 @@
     right: 0;
     left: 0;
     height: 100px;
-    background-color: var(--bg-main);
+    background-color: var(--text-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,19 +12,17 @@
     transition: all 0.3s ease-in-out;
     z-index: 999;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-
+    font-family: "IranYekanXFaNum", sans-serif;
 }
-
-
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-dark);
 }
 
 a.active {
-    background-color: #ff2d55;
-    color: white;
+    background-color: var(--primary);
+    color: var(--text-white);
     border: transparent;
 }
 
@@ -35,7 +33,7 @@ a.active {
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
-    background-color: #f8f8f8;
+    background-color: var(--bg-main);
 }
 
 .first_part {
@@ -46,8 +44,6 @@ a.active {
     padding: 8px 20px;
 }
 
-
-
 .second_part {
     flex: 1;
     width: 100%;
@@ -57,8 +53,6 @@ a.active {
     padding: 0 15px;
     transition: all 0.3s ease;
 }
-
-
 
 .header_left {
     flex: 0 0 auto;
@@ -87,8 +81,6 @@ a.active {
 
 }
 
-
-
 .list {
     list-style: none;
     display: flex;
@@ -97,12 +89,12 @@ a.active {
 
 .links {
     text-decoration: none;
-    color: #333;
+    color: var(--text-dark);
     font-weight: 500;
 }
 
 .links:hover {
-    color: #f88f01;
+    color: var(--secondary-yellow);
 }
 
 .access_bars {
@@ -111,6 +103,7 @@ a.active {
     align-items: center;
     justify-content: end;
     gap: 0 15px;
+    position: relative;
 }
 
 .access_bars_first_element {
@@ -125,8 +118,8 @@ a.active {
     right: -6px;
     width: 12px;
     height: 12px;
-    background-color: rgb(247, 64, 64);
-    color: white;
+    background-color: var(--primary-light);
+    color: var(--text-white);
     border-radius: 50%;
     font-size: 10px;
     display: flex;
@@ -143,7 +136,11 @@ a.active {
 
 .access_bars_second_element {
     position: relative;
+    cursor: pointer;
+}
 
+.access_bars_second_element:hover svg {
+    color: var(--text-dark);
 }
 
 .access_bars_third_element svg {
@@ -151,6 +148,21 @@ a.active {
     height: 24px;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.cart_count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary);
+    color: var(--text-white);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
@@ -171,8 +183,6 @@ a.active {
 
 }
 
-
-
 .tabs {
     position: relative;
     width: auto;
@@ -191,7 +201,7 @@ a.active {
 }
 
 .tabs_item:hover {
-    border-bottom: 2px solid #ff2d55;
+    border-bottom: 2px solid var(--primary);
 }
 
 .tabs_item span {
@@ -204,7 +214,7 @@ a.active {
 
 .nav__menu {
     font-weight: 300;
-    color: #999;
+    color: var(--text-light);
 }
 
 .sperator_wrapper {
@@ -217,7 +227,7 @@ a.active {
 .sperator {
     width: 2px;
     height: 15px;
-    background-color: #999;
+    background-color: var(--text-light);
     border-radius: 20px;
 }
 
@@ -249,7 +259,7 @@ a.active {
 .search_container {
     width: 550px;
     height: 500px;
-    background-color: white;
+    background-color: var(--text-white);
     border-radius: 12px;
 }
 
@@ -263,7 +273,7 @@ a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #999;
+    border: 1px solid var(--text-light);
     width: 23%;
     border-radius: 8px;
 }
@@ -280,13 +290,10 @@ a.active {
     width: 30px;
 }
 
-
 .second__search_bar {
     width: 100%;
     display: none;
 }
-
-
 
 .search__bar_icon_camera {
     width: 34px;
@@ -301,7 +308,6 @@ a.active {
     width: 34px;
 }
 
-
 .search__bar_icon {
     width: 40px;
     border-radius: 6px;
@@ -310,12 +316,12 @@ a.active {
     justify-content: center;
     padding-inline: 8px;
     margin-inline: 8px;
-    background-color: #f0f0f1;
+    background-color: var(--bg-main);
 
 }
 
 .search_text_color {
-    color: #999;
+    color: var(--text-light);
     cursor: pointer;
 }
 
@@ -368,9 +374,6 @@ a.active {
         width: 100%;
     }
 
-
-
-
     .second_part {
         width: 100%;
         height: 100%;
@@ -378,7 +381,6 @@ a.active {
         align-items: center;
         justify-content: center;
     }
-
 
     .layout.scrolled .first_part {
         opacity: 0.95;
@@ -394,7 +396,6 @@ a.active {
     .layout.scrolled .second_part {
         opacity: 0.95;
     }
-
 
     .header_center {
         display: none;
@@ -430,13 +431,10 @@ a.active {
         display: none;
     }
 
-
-
     .cards {
         display: flex;
         justify-content: space-around;
     }
-
 
 }
 
@@ -462,7 +460,7 @@ a.active {
     border: none;
     outline: none;
     border-radius: 4px;
-    background-color: #f0f0f1;
+    background-color: #fafafd;
     font-family: "IranYekanXFaNum";
 }
 
@@ -471,7 +469,7 @@ a.active {
     width: 18px;
     height: 18px;
     top: 50%;
-    color: #999;
+    color: var(--text-light);
     right: 5px;
     transform: translateY(-50%);
 }
@@ -480,16 +478,16 @@ a.active {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-family: "IranYekanX";
+    font-family: "IranYekanXFaNum";
     font-weight: 600;
-    color: #ff2d55;
+    color: var(--primary);
     margin-inline: 20px;
 }
 
 .search_bar_container {
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: var(--text-white);
 }
 
 .search_bar_container_flex {
@@ -502,7 +500,7 @@ a.active {
 .go_back_icon {
     width: 30px;
     padding-block: 4px;
-    background-color: #f0f0f1;
+    background-color: var(--bg-main);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -510,8 +508,8 @@ a.active {
 .bell_icon_name {
     width: 40px;
     padding-block: 6px;
-    background-color: #f0f0f1;
-    color: #333;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
     margin-inline: 5px;
     border-radius: 4px;
     cursor: pointer;
@@ -522,5 +520,5 @@ a.active {
 
 .bell_icon_name svg {
     width: 30px;
-    color: #5856d6;
+    color: var(--secondary-purple);
 }

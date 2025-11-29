@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--bg-main);
-    color: #333;
+    color: var(--text-dark);
     padding: 40px 0 20px;
     font-family: "IranYekanXFaNum", sans-serif;
 }
@@ -23,21 +23,21 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 16px;
-    color: #ff2d55;
+    color: var(--primary);
 }
 
 .subtitle {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 16px;
-    color: #333;
+    color: var(--text-dark);
 }
 
 .description {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #666;
+    color: var(--text-medium);
 }
 
 .social {
@@ -51,17 +51,17 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--text-white);
     border-radius: 50%;
-    color: #ff2d55;
+    color: var(--primary);
     transition: all 0.3s ease;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .socialLink:hover {
-    background-color: #ff2d55;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--text-white);
     transform: translateY(-2px);
 }
 
@@ -81,14 +81,14 @@
 }
 
 .link {
-    color: #666;
+    color: var(--text-medium);
     text-decoration: none;
     font-size: 12px;
     transition: all 0.3s ease;
 }
 
 .link:hover {
-    color: #ff2d55;
+    color: var(--primary);
     transform: translateX(20px);
 }
 
@@ -97,7 +97,7 @@
     align-items: center;
     font-size: 14px;
     margin-bottom: 12px;
-    color: #666;
+    color: var(--text-medium);
 }
 
 .icon {
@@ -105,11 +105,11 @@
     height: 18px;
     margin-left: 8px;
     flex-shrink: 0;
-    color: #ff2d55;
+    color: var(--primary);
 }
 
 .bottom {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--text-light);
     margin-top: 40px;
     padding-top: 20px;
     text-align: center;
@@ -117,7 +117,7 @@
 
 .copyright {
     font-size: 14px;
-    color: #999;
+    color: var(--text-light);
     margin: 0;
 }
 
@@ -188,7 +188,7 @@
     }
 
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 0 12px;
     }

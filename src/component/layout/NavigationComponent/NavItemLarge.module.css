@@ -7,8 +7,12 @@
     transition: all 0.2s ease;
 }
 
+.icon_container {
+    width: 30px;
+}
+
 .tabs_item:hover {
-    border-bottom: 2px solid #ff2d55;
+    border-bottom: 2px solid var(--primary);
 }
 
 .tabs_item span {
@@ -21,5 +25,5 @@
 
 .nav__menu {
     font-weight: 300;
-    color: #999;
+    color: var(--text-light);
 }

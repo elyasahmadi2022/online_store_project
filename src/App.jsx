@@ -1,19 +1,25 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./component/layout/AppLayout";
-import Home from "./page/Home";
 import "./index.css";
+import Home from "./page/Home";
+import ShoppingCart from "./cart/ShoppingCart";
+import NotificationsPage from "./page/NotificationsPage";
+import { CartProvider } from "./context/CartContext";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<AppLayout />}>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<p>Hello</p>} />
-          <Route path="/new" element={<p>Hello again</p>} />
-          <Route path="/old" element={<p>Hello a</p>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppLayout />}>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="/notifications" element={<NotificationsPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

@@ -1,0 +1,155 @@
+.homePage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+.homePage h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-dark);
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--text-white);
+  height: 100%;
+}
+
+.courseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.courseThumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--primary);
+  color: var(--text-white);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.courseInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  flex: 1;
+}
+
+.courseTitle {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  color: var(--text-dark);
+}
+
+.instructor {
+  color: var(--text-medium);
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.ratingValue {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.reviewsCount {
+  color: var(--text-medium);
+  font-size: 0.9rem;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.bestsellerBadge {
+  background-color: var(--secondary-yellow);
+  color: var(--text-black);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.featuredBadge {
+  background-color: var(--secondary-blue);
+  color: var(--text-white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.inStock {
+  background-color: var(--secondary-green);
+  color: var(--text-white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.outOfStock {
+  background-color: var(--primary);
+  color: var(--text-white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  align-items: center;
+  margin-top: auto;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.discountedPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}

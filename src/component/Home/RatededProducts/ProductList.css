@@ -1,0 +1,145 @@
+.grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); */
+  gap: 24px;
+  direction: rtl;
+  font-family: IranYekanBold;
+  padding: 56px 10px;
+}
+/* Card */
+.card {
+  /* background: #fff; */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border-radius: 16px;
+  place-items: center;
+  width: fit-content;
+  padding: 20px;
+  /* display: flex; */
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transform: scale(1.021);
+}
+.card:hover .content {
+  cursor: pointer;
+  /* transform: translateY(-4px); */
+  /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); */
+}
+.card:hover .image-wrapper {
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0);
+}
+.card-container {
+  width: 100%;
+  height: 100vh;
+  /* background: #f5d7b8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  width: 330px;
+  background: #fff;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Image */
+.image-wrapper-product {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-wrapper-product img {
+  height: 230px;
+}
+
+.image-wrapper-product .favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ffffff;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+
+  font-family: IranYekanBold;
+}
+
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Description */
+.description {
+  font-size: 13px;
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+/* Bottom row */
+.botton-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add to Cart button */
+.botton-row .add-btn {
+  color: #1a1a1a;
+  background: #e9e9e9;
+  border: none;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botton-row .add-btn:hover {
+  background: #000000;
+  color: white;
+}
+
+.cart-icon {
+  font-size: 14px;
+}

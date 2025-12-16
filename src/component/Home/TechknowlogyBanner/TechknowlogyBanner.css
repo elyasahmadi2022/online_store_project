@@ -1,0 +1,101 @@
+.tech-banner {
+  margin: auto;
+  padding: 32px 0;
+  width: 95%;
+  direction: rtl; /* RTL text as in the screenshot */
+  /* display: flex; */
+}
+
+.tech-banner-desc {
+  max-width: 100%;
+  margin-right: 5%;
+}
+
+.tech-banner-desc h1 {
+  font-size: 42px;
+  line-height: 1.05;
+  margin: 0 0 8px 0;
+  color: #222;
+  font-weight: 700;
+}
+
+.tech-banner-desc p {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: #333;
+  opacity: 0.9;
+  /* display: block; */
+  overflow: hidden;
+  line-height: 1.2em;
+  max-width: 500px;
+}
+
+.buy-btn {
+  background: #222;
+  color: #fff;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+}
+.buy-btn .btn-text {
+  border-radius: 50%;
+}
+.buy-btn:hover {
+  background-color: white;
+  color: black;
+  direction: ltr;
+  transition: 0.2ms;
+}
+.buy-btn:hover span {
+  background-color: black;
+  color: white;
+}
+.buy-btn:hover .sign {
+  background: #000000;
+  color: #ffffff;
+}
+.buy-btn:hover .btn-text {
+  background: #ffffff;
+  color: #000000;
+}
+
+.buy-btn span:first-child {
+  background: #fff;
+  color: #222;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .tech-banner {
+    flex-direction: column-reverse;
+    padding: 20px;
+    min-height: 520px;
+  }
+  .tech-banner-desc {
+    width: 100%;
+  }
+  .tech-banner-desc {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  .tech-banner-desc h1 {
+    font-size: 30px;
+  }
+  .book {
+    height: 160px;
+  }
+}

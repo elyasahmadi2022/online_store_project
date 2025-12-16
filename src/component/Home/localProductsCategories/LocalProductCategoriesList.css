@@ -1,0 +1,65 @@
+.featured-container {
+  width: 95%;
+  padding: 40px 24px;
+  background: #f4f4f4;
+  text-align: center;
+  box-sizing: border-box;
+  direction: rtl;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.featured-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+  font-family: IranYekanBold;
+}
+
+.categories-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 200px;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto 20px;
+  /* background: #eef8ef; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 70px;
+  height: auto;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+
+  font-family: IranYekanmedium;
+}

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "IranYekanblack";
+  src: local("IranYekanblack"),
+    url(./Font/IRANYekanWebBlack.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "IranYekanbold";
+  src: local("IranYekanbold"),
+    url(./Font/IRANYekanWebBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IranYekanlight";
+  src: local("IranYekanlight"),
+    url(./Font/IRANYekanWebLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IranYekanmedium";
+  src: local("IranYekanmedium"),
+    url(./Font/IRANYekanWebMedium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IranYekanregular";
+  src: local("IranYekanregular"),
+    url(./Font/IRANYekanWebRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IranYekanthin";
+  src: local("IranYekanthin"),
+    url(./Font/IRANYekanWebThin.ttf) format("truetype");
+}
+#root {
+  margin: auto;
+  font-family: IranYekanmedium;
+  position: sticky;
+  top: 0;
+}
+/* Background */
+.card-container {
+  width: 100%;
+  height: 100vh;
+  background: #f5d7b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  width: 330px;
+  background: #fff;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Image */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  height: 180px;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ffffff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 15px 20px;
+}
+
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Sizes */
+.sizes {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.sizes span {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #f8f8f8;
+}
+
+.sizes .active {
+  background: #ff9d30;
+  color: #fff;
+  border-color: #ff9d30;
+}
+
+/* Description */
+.description {
+  font-size: 13px;
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+/* Bottom row */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add to Cart button */
+.add-btn {
+  background: #ff9d30;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #e28826;
+}
+
+.cart-icon {
+  font-size: 14px;
+}

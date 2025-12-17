@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import ShoppingCart from "./cart/ShoppingCart";
 import NotificationsPage from "./page/NotificationsPage";
 import { CartProvider } from "./context/CartContext";
+import Product from "./page/Product.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/cart" element={<ShoppingCart />} />
             <Route path="/notifications" element={<NotificationsPage />} />
+            <Route path="product/:id"  element={<Product/>} />
           </Route>
         </Routes>
       </BrowserRouter>

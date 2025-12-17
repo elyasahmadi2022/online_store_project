@@ -1,8 +1,11 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
 import styles from "./ProductCard.module.css";
+import {useNavigate} from "react-router-dom";
 
 function ProductCard({ products }) {
+  console.log(products)
+  const navigate = useNavigate()
   const { addToCart } = useCart();
 
   const handleAddToCart = (product) => {
@@ -12,7 +15,7 @@ function ProductCard({ products }) {
   return (
     <>
       {products.map((product) => (
-        <div key={product.id} className={styles.card}>
+        <div key={product.id} className={styles.card} onClick={() => navigate(`product/${product.id}`)}>
           {product.isHotSale && <div className={styles.badge}>HOT SALE</div>}
           <div className={styles.tilt}>
             <div className={styles.img}>

@@ -117,10 +117,11 @@
     --text-medium: #666666;
     --text-light: #999999;
     --text-white: #FFFFFF;
+
 }
 
 body {
-    max-width: 1440px;
+    /*max-width: 1440px;*/
     margin: auto;
     font-family: "IranYekanXFaNum";
 }

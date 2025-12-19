@@ -1,15 +1,20 @@
-import React from "react";
-import sampleProducts from "../data/sampleProducts";
-import ProductCard from "../component/ProductCard";
-import styles from "./Home.module.css";
-
-const Home = () => {
+import CategoryList from "../component/Home/CategoryList/CategoryListComponent";
+import LocalProductsCategoriesList from "../component/Home/localProductsCategories/LocalProductCategoriesList";
+import RatedProductList from "../component/Home/RatededProducts/ProductList";
+import BookBanner from "../component/Home/Banners/book-banner/BookBanner";
+import BookList from "../component/Home/BookCardList/BookList";
+import TechknowlogyBanner from "../component/Home/TechknowlogyBanner/TechknowlogyBanner";
+import TechknowlogyProductsList from "../component/Home/TechknowlogyProductsList/TechknowlogyProductsListComponent";
+function Home() {
   return (
-    <div className={styles.homePage}>
-      <h1>محصولات ما</h1>
-      <div className={styles.coursesGrid}>
-        <ProductCard products={sampleProducts} />
-      </div>
+    <div>
+      <CategoryList></CategoryList>
+      <LocalProductsCategoriesList></LocalProductsCategoriesList>
+      <RatedProductList></RatedProductList>
+      <BookBanner></BookBanner>
+      <BookList></BookList>
+      <TechknowlogyBanner></TechknowlogyBanner>
+      <TechknowlogyProductsList></TechknowlogyProductsList>
     </div>
   );
 };

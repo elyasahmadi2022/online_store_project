@@ -1,0 +1,107 @@
+.tech-cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 30px;
+  padding: 15px 15px;
+  font-family: "Inter", sans-serif;
+  place-items: CENTER;
+  margin: 40px auto;
+}
+
+.tech-card {
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  direction: rtl;
+  padding: 20px;
+}
+.tech-card:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transform: scale(1.021);
+}
+.tech-card-img {
+  /* width: 6rem; */
+  height: 25vh;
+  width: 40%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.tech-card-content {
+  padding: 18px;
+  width: 100%;
+}
+
+.overlay:hover .tech-card-img {
+  transform: scale(1.06);
+  border: 1px solid red;
+}
+.name {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+  font-family: IranYekanBold;
+}
+.product-name-1 {
+  font-family: IranYekanMedium;
+  background-color: #e3e3e3;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.product-desc-1 {
+  font-size: 14px;
+  color: #2a2a2a;
+  margin-bottom: 18px;
+  font-family: IranYekanregular;
+  display: block;
+  overflow: hidden;
+  max-height: 2.4em;
+  line-height: 1.2em;
+}
+
+.tec-product-price {
+  /* background-color: #ececec; */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: IranYekanMedium;
+  font-size: 14px;
+  /* color: #3e3e3e; */
+}
+
+.follow-btn {
+  background: #f2f2f7;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.follow-btn:hover {
+  background: #000000;
+  color: white;
+}
+.product-details-container {
+  font-family: IranYekanregular;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.product-details-container .product-details {
+  /* display: flex; */
+  margin-bottom: 10px;
+  font-size: 12px;
+}

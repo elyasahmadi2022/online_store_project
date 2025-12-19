@@ -20,7 +20,7 @@
 }
 
 .modal {
-    background-color: var(--text-white);
+    background-color: var(--bg-main);
     padding: 2rem;
     border-radius: 8px;
     max-width: 500px;
@@ -30,6 +30,7 @@
     position: relative;
     transform: scale(0.9);
     transition: transform 0.3s ease;
+    border: 1px solid red;
 }
 
 .overlay.open .modal {
@@ -44,7 +45,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--text-light);
+    color: var(--text-heading);
 }
 
 .closeButton:hover {

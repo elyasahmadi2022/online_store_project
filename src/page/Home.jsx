@@ -17,6 +17,6 @@ function Home() {
       <TechknowlogyProductsList></TechknowlogyProductsList>
     </div>
   );
-}
+};
 
 export default Home;

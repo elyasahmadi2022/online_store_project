@@ -1,9 +1,10 @@
 .logo {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    font-family: "IranYekanX";
-    font-weight: 600;
-    color: #ff2d55;
-    margin-inline: 20px;
+    gap: 0 6px;
+    font-family: "IranYekanXFaNum";
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--primary);
+    transition: all 0.2s ease;
 }

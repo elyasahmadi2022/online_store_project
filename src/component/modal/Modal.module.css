@@ -20,7 +20,7 @@
 }
 
 .modal {
-    background-color: white;
+    background-color: var(--text-white);
     padding: 2rem;
     border-radius: 8px;
     max-width: 500px;
@@ -44,9 +44,9 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #999;
+    color: var(--text-light);
 }
 
 .closeButton:hover {
-    color: #333;
+    color: var(--text-dark);
 }

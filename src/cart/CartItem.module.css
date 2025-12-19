@@ -1,0 +1,324 @@
+.cartItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--text-light);
+  border-radius: 15px;
+  background-color: var(--text-white);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  transition: .3s;
+  font-family: "IranYekanXFaNum";
+}
+
+.itemImage {
+  flex: 0 0 180px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.itemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform .5s;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(to right, rgba(169, 3, 41, 1) 0%, rgba(196, 72, 72, 1) 44%, rgba(170, 34, 56, 1) 100%);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  z-index: 10;
+}
+
+.itemDetails {
+  flex: 2;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 10px;
+  letter-spacing: -.5px;
+}
+
+.removeItemBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.removeItemBtn:hover {
+  color: var(--brand-red);
+  background-color: rgba(239, 68, 68, 0.1);
+  transform: scale(1.1);
+}
+
+.instructor {
+  font-size: 13px;
+  color: var(--text-medium);
+  margin: 5px 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.ratingValue {
+  font-weight: bold;
+  color: var(--text-dark);
+  font-size: 13px;
+}
+
+.stars {
+  color: var(--secondary-yellow);
+  font-size: 13px;
+}
+
+.reviews {
+  color: var(--text-light);
+  font-size: 11px;
+}
+
+.metaInfo {
+  display: flex;
+  gap: 5px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.badges {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.badgeBestseller {
+  font-size: 10px;
+  background: #F4F4F5;
+  color: #71717A;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.badgeHighestRated {
+  font-size: 10px;
+  background: #F4F4F5;
+  color: #71717A;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.itemPriceSection {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.priceContainer {
+  text-align: right;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.originalPrice {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: #A1A1AA;
+  margin-bottom: 2px;
+}
+
+.discountedPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.quantityBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--text-light);
+  background-color: var(--text-white);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  transition: .3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityBtn:hover:not(:disabled) {
+  background: linear-gradient(45deg, var(--color-dark-2), #3F3F46);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+  color: var(--text-white);
+}
+
+.quantity {
+  min-width: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-dark);
+  font-size: 16px;
+}
+
+.itemActions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moveToWishlistBtn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.moveToWishlistBtn:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .cartItem {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .itemImage {
+    flex: 0 0 140px;
+  }
+
+  .itemTitle {
+    font-size: 16px;
+  }
+
+  .instructor {
+    font-size: 12px;
+  }
+
+  .ratingValue,
+  .stars {
+    font-size: 12px;
+  }
+
+  .reviews {
+    font-size: 10px;
+  }
+
+  .badgeBestseller,
+  .badgeHighestRated {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+
+  .originalPrice {
+    font-size: 12px;
+  }
+
+  .discountedPrice {
+    font-size: 18px;
+  }
+
+  .quantityBtn {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+
+  .quantity {
+    font-size: 14px;
+    min-width: 28px;
+  }
+
+  .moveToWishlistBtn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+  }
+
+  .itemPriceSection {
+    align-items: flex-start;
+  }
+
+  .priceContainer {
+    text-align: left;
+  }
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.cartItem:hover .itemImage img {
+  transform: scale(1.05);
+}

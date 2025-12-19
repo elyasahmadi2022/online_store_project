@@ -1,0 +1,14 @@
+.addToCartBtn {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.addToCartBtn:hover {
+  background-color: var(--primary-dark);
+}
